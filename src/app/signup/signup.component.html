@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign up</h1>
+                    <h6>SignUp to Register</h6>
+                </div>
+                <form>
+                    <form [formGroup]="signupForm" (ngSubmit)="onsubmit()">
+
+                        <div class="mb-3 mx-4">
+                            <label for="fullname">Full Name</label>
+                            <input formControlName="fullName"
+                                [ngClass]="{'is-invalid':submitted && signupForm.controls.fullName.errors}" type="text"
+                                class="form-control" />
+                            <div *ngIf="submitted && signupForm.controls.fullName.errors" class="" text-danger>
+
+                                <div *ngIf="submitted && signupForm.controls.fullName.errors.required">
+                                    fullName is required.
+                                </div>
+
+                            </div>
+                        </div>    
+                            <div class="mb-3 mx-4">
+                                <label for="mobileno">Mobile Number</label>
+                                <input formControlName="mobileNo"
+                                    [ngClass]="{'is-invalid':submitted && signupForm.controls.mobileNo.errors}"
+                                    type="text" class="form-control" />
+                                    <div *ngIf="submitted && signupForm.controls.mobileNo.errors" class="" text-danger>
+
+
+                                        <div *ngIf="submitted && signupForm.controls.mobileNo.errors.required">
+                                            mobile no is must.
+                                        </div>
+        
+                                    </div>
+
+                            </div>
+                            <div class="mb-3 mx-4">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input formControlName="eMail"
+                                    [ngClass]="{'is-invalid':submitted && signupForm.controls.eMail.errors}"
+                                    type="email" class="form-control" id="exampleInputEmail1"
+                                    placeholder="name@example.com" aria-describedby="emailHelp" />
+                                    <div *ngIf="submitted && signupForm.controls.eMail.errors" class="" text-danger>
+
+
+                                        <div *ngIf="submitted && signupForm.controls.eMail.errors.required">
+                                            e-Mail is required.
+                                        </div>
+        
+                                    </div>
+                            </div>
+                            
+                            <div class="mb-3 mx-4">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input formControlName="Password"
+                                    [ngClass]="{'is-invalid':submitted && signupForm.controls.Password.errors}"
+                                    type="password" class="form-control" id="exampleInputPassword1" />
+                                    <div *ngIf="submitted && signupForm.controls.Password.errors" class="" text-danger>
+
+
+                                        <div *ngIf="submitted && signupForm.controls.Password.errors.required">
+                                            Password is required.
+                                        </div>
+        
+                                    </div>
+
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary mx-4">Signup</button>
+                        </form>
+                    
+                              <a style="color: white; margin-top:10px ;margin-bottom: 15px;margin-left: 15px;"
+                               routerLink="/login">Already login?click to login</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

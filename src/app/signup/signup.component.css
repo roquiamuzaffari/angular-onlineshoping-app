@@ -1,0 +1,23 @@
+.card{
+    margin-top: 50px;
+    margin-left: 300px;
+    border:5px solid white;
+    width:400px;
+    padding:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 5%;
+    transform: translate(-50%,-50%);
+    background: rgb(228, 237, 242);
+    background: linear-gradient(90deg,rgba(246, 233, 231, 0.986) 0%, hsla(260,29%,36%,1) 100%);
+}
+.card h1,
+h6{
+    color:beige;
+}
+label{
+    color: rgb(75, 75, 30);
+}
+.colo{
+    color:beige;
+}

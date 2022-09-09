@@ -1,0 +1,28 @@
+.card{
+    margin-top: 50px;
+    margin-left: 300px;
+    border:none;
+    width:300px;
+    padding:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 5%;
+    transform: translate(-50%,-50%);
+    background: rgb(159, 110, 68);
+    background: linear-gradient(90deg,rgb(115, 82, 52) 0%, rgb(149, 105, 57) 100%);
+}
+.card h1,
+h6{
+    color:beige;
+}
+label{
+    color: beige;
+}
+
+.bg-img{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    filter:none;
+    background: fixed;
+}

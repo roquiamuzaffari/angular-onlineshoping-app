@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+    <h1>Fetching all the users details</h1>
+    <div class="search-name">
+        <input type="text" name="search" [(ngModel)]="searchText" placeholder="search by name">
+    </div>
+    <table class="table table-success table-striped">
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let name of users | filter:searchText">
+                <td>{{name.id}}</td>
+                <td>{{name.name}}</td>
+                <td>{{name.email}}</td>
+                <td>{{name.password}}</td>
+            </tr>
+        </tbody>
+   
+    </table>
+</div>
+</div>

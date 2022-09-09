@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "firstname":"Anna",
+      "lastname":"Mishra",
+      "email":"mishra@gmail.com",
+      "mobile":8340468629
+      
+    },
+    {
+      "id": 3,
+      "firstname":"Sana",
+      "lastname":"Khatoon",
+      "email":"khatoon@gmail.com",
+      "mobile":9870468629
+      
+    }
+   
+  ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

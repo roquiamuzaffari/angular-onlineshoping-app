@@ -1,0 +1,16 @@
+<div class="container  text-center mt-10  bg-secondary p-5">
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 mt-2">
+      <button class="btn col-lg-12 col-12 btn-dark" (click)="resetBtn()">Reset</button>
+    </div>
+    <div class="col-lg-4 mt-2">
+      
+      <p *ngIf="btnState"></p>
+      <button [disabled]="btnState" class="btn col-lg-12 col-12 btn-success" (click)="increseBtn()">count</button>
+      <h1>{{countNumber}}</h1>
+    </div>
+  </div>
+
+
+</div>

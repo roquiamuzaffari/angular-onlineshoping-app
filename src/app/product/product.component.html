@@ -1,0 +1,60 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="http://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Product</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+
+
+                <img src="https://cdn-icons-png.flaticon.com/512/3362/3362661.png" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/512/8365/8365511.png" alt="">
+                <h6>Women's Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/512/1198/1198312.png" alt="">
+                <h6>Men's Fashion</h6>
+            </a>
+        </div>
+
+        <div class="item">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/512/3774/3774155.png" alt="">
+                <h6>Jewllery</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://cdn-icons-png.flaticon.com/512/2880/2880484.png" alt="">
+                <h6>Kid's Fashion</h6>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productlist">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">{{item.title}}
+                </h5>
+                <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">
+                    {{item.description}}</p>
+                <p><strong>Price</strong>${{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+
+    </div>
+</div>
